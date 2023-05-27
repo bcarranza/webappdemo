@@ -11,7 +11,8 @@ const db = mysql2.createConnection({
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT
     
     //user: "myuser",
     //host: "18.237.20.62", // change if needed
