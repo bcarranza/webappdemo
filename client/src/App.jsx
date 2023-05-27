@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './App.css'
 import Axios from 'axios'
 
+Axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
+
 function App() {
   const [name, setName] = useState("")
   const [description, setDescription] = useState("")
